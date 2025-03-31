@@ -12,7 +12,7 @@ void setup() {
   Serial1.begin(9600);
   // reserve 200 bytes for the inputString:
   inputString.reserve(200);
-
+  Serial.println("Setup... Done");
 }
 
 void loop() {
