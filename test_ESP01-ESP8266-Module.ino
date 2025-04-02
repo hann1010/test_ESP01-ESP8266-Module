@@ -42,6 +42,7 @@ void serialEvent() {
     // do something about it:
     if (inChar == '\n') {
       stringComplete = true;
+      Serial.println("Serial1 read... Done");      
     }
   }
 }
