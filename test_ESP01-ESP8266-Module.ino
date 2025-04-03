@@ -5,6 +5,7 @@ For Arduino Mega 2560 board */
 
 String inputString = "";      // a String to hold incoming data
 bool stringComplete = false;  // whether the string is complete
+bool stringComplete1 = false;  // whether the string is complete
 
 void setup() {
   // initialize serial:
@@ -18,7 +19,7 @@ void setup() {
 
 void loop() {
   // print the string when a newline arrives:
-  if (stringComplete) {
+  if (stringComplete1) {
     Serial.println(inputString);
     // clear the string:
     inputString = "";
