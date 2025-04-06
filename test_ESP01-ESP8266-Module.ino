@@ -42,7 +42,7 @@ void serialEvent() {
     // if the incoming character is a newline, set a flag so the main loop can
     // do something about it:
     if (inChar == '\n') {
-      stringComplete = true;
+      stringComplete1 = true;
       Serial.println("Serial1 read... Done");      
     }
   }
