@@ -23,6 +23,12 @@ void loop() {
     Serial.println(inputString);
     // clear the string:
     inputString = "";
+    stringComplete1 = false;
+  }
+  if (stringComplete) {
+    Serial.println(inputString);
+    // clear the string:
+    inputString = "";
     stringComplete = false;
   }
   delay(1000);
@@ -38,7 +44,7 @@ void serialEvent() {
     // get the new byte:
     char inChar = (char)Serial1.read();
     // add it to the inputString:
-    inputString += inChar;
+    inputString1 += inChar;
     // if the incoming character is a newline, set a flag so the main loop can
     // do something about it:
     if (inChar == '\n') {
