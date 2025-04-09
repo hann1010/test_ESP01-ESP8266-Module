@@ -26,7 +26,7 @@ void loop() {
     stringComplete1 = false;
   }
   if (stringComplete) {
-    Serial.println(inputString);
+    Serial1.println(inputString);
     // clear the string:
     inputString = "";
     stringComplete = false;
