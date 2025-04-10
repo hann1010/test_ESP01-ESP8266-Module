@@ -8,7 +8,7 @@ bool stringComplete = false;  // whether the string is complete
 bool stringComplete1 = false;  // whether the string is complete
 
 void setup() {
-  // initialize serial:
+  // initialize serials:
   Serial.begin(9600);
   Serial1.begin(9600);
   // reserve 200 bytes for the inputString:
