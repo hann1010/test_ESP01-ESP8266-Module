@@ -31,7 +31,7 @@ void loop() {
     inputString = "";
     stringComplete = false;
   }
-  delay(1000);
+  //delay(1000);
 }
 
 /*
