@@ -4,6 +4,7 @@ For Arduino Mega 2560 board */
 // Serial Event
 
 String inputString = "";      // a String to hold incoming data
+String inputString1 = "";      // a String to hold incoming data
 bool stringComplete = false;  // whether the string is complete
 bool stringComplete1 = false;  // whether the string is complete
 
@@ -20,9 +21,9 @@ void setup() {
 void loop() {
   // print the string when a newline arrives:
   if (stringComplete1) {
-    Serial.println(inputString);
+    Serial.println(inputString1);
     // clear the string:
-    inputString = "";
+    inputString1 = "";
     stringComplete1 = false;
   }
   if (stringComplete) {
