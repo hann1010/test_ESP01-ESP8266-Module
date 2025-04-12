@@ -16,6 +16,7 @@ void setup() {
   inputString.reserve(200);
   inputString1.reserve(200);
   Serial.println("Setup... Done");
+  //Serial1.println("AT+CWMODE?");
 }
 
 void loop() {
@@ -28,6 +29,7 @@ void loop() {
   }
   if (stringComplete) {
     Serial1.println(inputString);
+    Serial.println(inputString);
     // clear the string:
     inputString = "";
     stringComplete = false;
@@ -41,7 +43,7 @@ void loop() {
   delay response. Multiple bytes of data may be available.
 */
 void serialEvent() {
-  while (Serial1.available()) {
+  while (Serial1.available() > 0) {
     // get the new byte:
     char inChar = (char)Serial1.read();
     // add it to the inputString:
@@ -53,8 +55,9 @@ void serialEvent() {
       Serial.println("Serial1 read... Done");      
     }
   }
-  while (Serial.available()) {
+  while (Serial.available() > 0) {
     // get the new byte:
+    //Serial1.write(Serial.read());
     char inChar = (char)Serial.read();
     // add it to the inputString:
     inputString += inChar;
