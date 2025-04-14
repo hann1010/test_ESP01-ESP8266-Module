@@ -9,6 +9,7 @@ String inputString1 = "";      // a String to hold incoming data
 bool stringComplete = false;  // whether the string is complete
 bool stringComplete1 = false;  // whether the string is complete
 
+
 void setup() {
   // initialize serials:
   Serial.begin(9600);
