@@ -21,6 +21,7 @@ void setup() {
   //Serial1.println("AT+CWMODE?");
 }
 
+
 void loop() {
   // print the string when a newline arrives:
   if (stringComplete1) {
