@@ -18,6 +18,8 @@ void setup() {
   inputString.reserve(200);
   inputString1.reserve(200);
   Serial.println("Setup... Done");
+  // Test
+  //Serial1.println("AT");
   //Serial1.println("AT+CWMODE?");
 }
 
