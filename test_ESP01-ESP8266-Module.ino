@@ -18,6 +18,7 @@ void setup() {
   inputString.reserve(200);
   inputString1.reserve(200);
   Serial.println("Setup... Done");
+  
   // Test
   //Serial1.println("AT");
   //Serial1.println("AT+CWMODE?");
@@ -39,7 +40,11 @@ void loop() {
     inputString = "";
     stringComplete = false;
   }
-  //delay(1000);
+  delay(10000);
+  Serial.println("0");
+  Serial.println(Serial1.read());
+  Serial.println("1");
+  Serial.println(Serial.read());
 }
 
 
