@@ -53,7 +53,6 @@ void loop() {
   routine is run between each time loop() runs, so using delay inside loop can
   delay response. Multiple bytes of data may be available.
 */
-
 void serialEvent() {
   while (Serial1.available() > 0) {
     // get the new byte:
