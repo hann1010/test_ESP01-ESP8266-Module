@@ -20,8 +20,8 @@ void setup() {
   Serial.println("Setup... Done");
   
   // Test
-  //Serial1.println("AT");
-  //Serial1.println("AT+CWMODE?");
+  // Serial1.println("AT");
+  // Serial1.println("AT+CWMODE?");
 }
 
 
