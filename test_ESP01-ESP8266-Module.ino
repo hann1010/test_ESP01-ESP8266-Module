@@ -41,8 +41,8 @@ void loop() {
     stringComplete = false;
   }
   delay(10000);
-  Serial.println("0");
-  Serial.println(Serial1.read());
+  // Serial.println("0");
+  // Serial.println(Serial1.read());
   Serial.println("1");
   Serial.println(Serial.read());
 }
